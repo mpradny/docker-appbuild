@@ -14,3 +14,9 @@ RUN yum update -y && \
 # Install Domino
 USER notes
 RUN /domino-docker/domino_docker_setuponly.sh
+
+# Build Domino Update Site
+COPY --chown=notes:notes .m2 /home/notes/.m2/
+RUN mvn org.openntf.p2:generate-domino-update-site:4.0.0:generateUpdateSite \
+    -Dsrc="/opt/hcl/domino/notes/latest/linux" \
+    -Ddest="/local/UpdateSite"
