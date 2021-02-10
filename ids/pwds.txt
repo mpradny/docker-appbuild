@@ -1,0 +1,5 @@
+Server=
+AddServer=
+Certifier=domino4ever
+OUCertifier=
+Administrator=domino4ever
