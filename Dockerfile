@@ -20,3 +20,6 @@ COPY --chown=notes:notes .m2 /home/notes/.m2/
 RUN mvn org.openntf.p2:generate-domino-update-site:4.0.0:generateUpdateSite \
     -Dsrc="/opt/hcl/domino/notes/latest/linux" \
     -Ddest="/local/UpdateSite"
+
+ENTRYPOINT ["/domino-docker/mvn-entrypoint.sh"]
+CMD ["mvn"]
