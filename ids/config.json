@@ -1,0 +1,31 @@
+{
+	"serverSetup": {
+		"server": {
+			"type": "first",
+			"name": "v12beta",
+			"domainName": "MPRBeta",
+			"useExistingServerID" : true,
+			"IDFilePath": "/local/ids/server.id"
+		},
+		"network": {
+			"hostName": "v12beta.pris.to"
+		},
+		"org": {
+			"orgName": "MPRBeta",
+			"certifierPassword": "domino4ever",
+			"useExistingCertifierID": true,
+			"certifierIDFilePath" : "/local/ids/cert.id"			
+		},
+			
+		"admin": {
+			"firstName": "Domino",
+			"lastName": "Admin",
+			"password": "domino4ever",
+			"useExistingAdminID": true,			
+			"IDFilePath": "/local/ids/admin.id"
+		},
+		"notesINI": {
+			"ServerTasks": "server -c quit"
+		}
+	}
+}
