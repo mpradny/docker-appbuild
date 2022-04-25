@@ -1,4 +1,7 @@
 {
+	"autoConfigPreferences": {
+		"startServerAfterConfiguration": false
+	},
 	"serverSetup": {
 		"server": {
 			"type": "first",
@@ -15,17 +18,13 @@
 			"certifierPassword": "domino4ever",
 			"useExistingCertifierID": true,
 			"certifierIDFilePath" : "/local/ids/cert.id"			
-		},
-			
+		},			
 		"admin": {
 			"firstName": "Domino",
 			"lastName": "Admin",
 			"password": "domino4ever",
 			"useExistingAdminID": true,			
 			"IDFilePath": "/local/ids/admin.id"
-		},
-		"notesINI": {
-			"ServerTasks": "server -c quit"
-		}
+		}		
 	}
 }
